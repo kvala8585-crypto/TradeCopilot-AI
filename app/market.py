@@ -7,7 +7,7 @@ def get_stock_data(symbol="BTC-USD"):
     if data.empty:
         return None
 
-    # 🔹 RSI Calculation
+    #  RSI Calculation
     delta = data["Close"].diff()
     gain = (delta.where(delta > 0, 0)).rolling(window=14).mean()
     loss = (-delta.where(delta < 0, 0)).rolling(window=14).mean()
@@ -15,7 +15,7 @@ def get_stock_data(symbol="BTC-USD"):
     rs = gain / loss
     rsi = 100 - (100 / (1 + rs))
 
-    # 🔹 MACD Calculation
+    # MACD Calculation
     exp1 = data["Close"].ewm(span=12, adjust=False).mean()
     exp2 = data["Close"].ewm(span=26, adjust=False).mean()
     macd = exp1 - exp2
