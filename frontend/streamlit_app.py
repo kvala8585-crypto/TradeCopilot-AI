@@ -12,15 +12,15 @@ if st.button("Analyze"):
     if "error" in data:
         st.error(data["error"])
     else:
-        # 🔥 Price (NEW ADD)
+        # Price (NEW ADD)
         st.write("### 💰 Current Price")
         st.success(round(data["data"]["price"], 2))
 
-        # 🔥 Signal
+        # Signal
         st.write("### 📊 Signal")
         st.success(data["signal"])
 
-        # 🔥 Market Indicators
+        # Market Indicators
         st.write("### 📈 Market Indicators")
 
         col1, col2, col3 = st.columns(3)
@@ -34,6 +34,6 @@ if st.button("Analyze"):
         with col3:
             st.metric("MACD Signal", round(data["data"]["macd_signal"], 2))
 
-        # 🔥 AI Analysis
+        # AI Analysis
         st.write("### 🤖 AI Analysis")
         st.info(data["ai_analysis"])
