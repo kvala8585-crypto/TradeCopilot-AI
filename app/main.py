@@ -16,7 +16,7 @@ def analyze(symbol: str = "BTC-USD"):
     if not data:
         return {"error": "No data"}
 
-    # 🔥 Updated: RSI + MACD pass kariye
+    # Updated: RSI + MACD pass kariye
     signal = generate_signal(
         data["price"],
         data["high"],
