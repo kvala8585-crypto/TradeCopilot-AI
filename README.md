@@ -1,22 +1,20 @@
-# 📈 TradeCopilot AI
+# TradeCopilot AI
 
 AI-powered trading assistant that provides real-time market analysis and intelligent buy/sell signals using technical indicators like RSI and MACD.
 
----
+## Deploy on Render:https://tradecopilot-ai.onrender.com/
 
-## 🚀 Features
+##  Features
 
-* 📊 Real-time market data (Stocks & Crypto)
-* 📈 RSI (Relative Strength Index) indicator
-* 📉 MACD (Moving Average Convergence Divergence)
-* 🤖 Smart AI-based trading insights
-* ⚡ FastAPI backend (high performance API)
-* 🎨 Streamlit frontend (interactive UI dashboard)
-* 🔄 Fallback logic (works without external AI APIs)
+* Real-time market data (Stocks & Crypto)
+*  RSI (Relative Strength Index) indicator
+* MACD (Moving Average Convergence Divergence)
+* Smart AI-based trading insights
+*  FastAPI backend (high performance API)
+* Streamlit frontend (interactive UI dashboard)
+*  Fallback logic (works without external AI APIs)
 
----
-
-## 🧠 How It Works
+## How It Works
 
 1. Fetches real-time data using `yfinance`
 2. Calculates RSI & MACD indicators
@@ -24,11 +22,9 @@ AI-powered trading assistant that provides real-time market analysis and intelli
 4. Provides human-like AI explanation based on market conditions
 5. Displays results in a clean Streamlit dashboard
 
----
 
-## 🏗️ Project Structure
+## Project Structure
 
-```
 TradeCopilot-AI/
 │
 ├── app/
@@ -42,20 +38,18 @@ TradeCopilot-AI/
 │
 ├── requirements.txt
 └── README.md
-```
 
----
 
-## ⚙️ Installation & Setup
+## Installation & Setup
 
-### 1️⃣ Clone the repository
+### Clone the repository
 
 ```
-git clone https://github.com/YOUR_USERNAME/TradeCopilot-AI.git
+git clone https://github.com/kvala8585-crypto/TradeCopilot-AI
 cd TradeCopilot-AI
 ```
 
-### 2️⃣ Install dependencies
+### Install dependencies
 
 ```
 pip install -r requirements.txt
@@ -63,9 +57,9 @@ pip install -r requirements.txt
 
 ---
 
-## ▶️ Run the Project Locally
+##  Run the Project Locally
 
-### 🔹 Start Backend (FastAPI)
+###  Start Backend (FastAPI)
 
 ```
 uvicorn app.main:app --reload
@@ -79,7 +73,7 @@ http://127.0.0.1:8000/docs
 
 ---
 
-### 🔹 Start Frontend (Streamlit)
+###  Start Frontend (Streamlit)
 
 ```
 streamlit run frontend/streamlit_app.py
@@ -91,33 +85,7 @@ Open:
 http://localhost:8501
 ```
 
----
-
-## 📊 API Endpoint
-
-```
-GET /analyze?symbol=BTC-USD
-```
-
-### Example Response:
-
-```
-{
-  "symbol": "BTC-USD",
-  "data": {
-    "price": 77000,
-    "rsi": 45,
-    "macd": 12,
-    "macd_signal": 10
-  },
-  "signal": "BUY (MACD Bullish)",
-  "ai_analysis": "Market may move upward..."
-}
-```
-
----
-
-## 🌐 Deployment
+## Deployment
 
 ### Backend:
 
@@ -134,30 +102,21 @@ uvicorn app.main:app --host 0.0.0.0 --port 10000
 
 ---
 
-## 💼 Use Cases
+## Use Cases
 
 * Trading signal assistant
 * Learning technical analysis
 * AI-based financial insights
 * Portfolio projects for AI/ML roles
 
----
+##  Future Improvements
 
-## 🔥 Future Improvements
+* Live price charts
+*  Chat-based AI assistant
+* Telegram / Email alerts
 
-* 📉 Live price charts
-* 💬 Chat-based AI assistant
-* 📲 Telegram / Email alerts
-* ⚡ Automation using n8n
+##  Author
 
----
+kavi vala
 
-## 👨‍💻 Author
 
-**kavi vala**
-
----
-
-## ⭐ Support
-
-If you like this project, give it a ⭐ on GitHub!
