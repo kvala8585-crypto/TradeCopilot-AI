@@ -13,7 +13,7 @@ def home():
 def analyze(symbol: str = "BTC-USD"):
     data = get_stock_data(symbol)
 
-    if not data:
+    if data is None:
         return {"error": "No data"}
 
     # Updated: RSI + MACD pass kariye
