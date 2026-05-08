@@ -1,6 +1,4 @@
-
-
-  import yfinance as yf
+import yfinance as yf
 import pandas as pd
 
 def get_stock_data(symbol="BTC-USD"):
