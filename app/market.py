@@ -1,20 +1,22 @@
 import yfinance as yf
 import pandas as pd
 
+
 def get_stock_data(symbol="BTC-USD"):
 
     try:
         # Download stock/crypto data
         data = yf.download(
             symbol,
-            period="1d",
-            interval="5m",
+            period="5d",
+            interval="1h",
             progress=False,
             auto_adjust=True
         )
 
         # Check empty data
         if data.empty:
+            print("Yahoo Finance returned empty data")
             return None
 
         # Convert columns to single values
@@ -62,3 +64,6 @@ def get_stock_data(symbol="BTC-USD"):
     except Exception as e:
         print("MARKET DATA ERROR:", e)
         return None
+
+       
+      
