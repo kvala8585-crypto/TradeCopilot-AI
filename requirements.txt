@@ -3,6 +3,7 @@ uvicorn
 python-dotenv
 requests
 pandas
+numpy
 yfinance
 streamlit
 google-generativeai
